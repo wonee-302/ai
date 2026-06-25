@@ -1,0 +1,29 @@
+*. 아나콘다 설치 후, GPU 사용 여부 확인을 위한 작업들
+1. Anaconda prompt를 실행하여 패키지 설치
+-  pip install tensorflow==2.10
+
+2. jyputer notebook 확인
+import tensorflow as tf
+print(tf.__version__)
+tf.config.list_physical_devices('GPU')
+
+
+3. 팀프로젝트 기간에 GPU를 비활성화 하려면
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
+import tensorflow as tf
+print(tf.__version__)
+tf.config.list_physical_devices('GPU')
+
+
+
+
+
+
+
+
+
+
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118

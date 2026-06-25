@@ -1,0 +1,8 @@
+9. 주피터 lab을 쓰고 싶으면 "conda install jupyterlab"을 prompt에서 실행하고 대상을 [C:\Users\901-00\anaconda3\python.exe 
+C:\Users\901-00\anaconda3\cwp.py 
+C:\Users\901-00\anaconda3 
+C:\Users\901-00\anaconda3\python.exe 
+C:\Users\901-00\anaconda3\Scripts\jupyter-lab-script.py "E:\이전수업자료\2_AI\source"]로 수정
+지금 쓰는 notebook-script.py 대신 lab-script.py로 바꿈
+
+주피터lab에서 Table of Contents extensions 사용하려면 "pip install jupyterlab jupyterlab-toc"나 "conda install -c conda-forge jupyterlab jupyterlab-toc" 설치 후 JupyterLab 다시 켜면, 왼쪽 사이드바에 "Table of Contents" 아이콘이 생김
