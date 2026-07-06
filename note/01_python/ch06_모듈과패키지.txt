@@ -1,0 +1,28 @@
+1절. 파이썬 표준 모듈 사용 
+  -모듈: 함수, 변수, 클래스 등을 담고 있는 파이썬코드 파일(*.py)
+
+2절 사용자 정의 모듈 
+-함수나 클래스나 변수등을 파이썬 파일(*.py)에 저장해서 모듈을 만들고, 재사용할 수 있음
+- 모듈을 가져오는 순서 (1) 표준모듈 (2) sys.path 변수에 저장된 경로 (실행은 1번만 한다. sys.path는 컴퓨터를 부팅할때마다 실행해야한다.)
+r"C:\ai\source\pylib" == "C:\\ai\\source\\pylib"
+
+3절. 패키지
+- 모듈이 (py)들이 들어있는 폴더 (__init__.py 파일이 있어야 패키지로 인식함)
+- 모듈/ 패키지나 모듈안의 함수를 가져오는 방법  
+   import A              - A모듈을 가져옴 
+   import A as B         - A모듈을 B이름으로 가져옴 
+   from A import B       - A모듈안의 B함수 (클래스| 변수)를 가져옴 
+   from A import B as C  - A모듈안의 B 함수를 C 이름으로 가져옴 
+   
+   from A import B   - A 패키지 안의 B 모듈을 가져옴 
+   from A.B import C - A 패키지 안의 B 모듈을 안의 C 함수를 가져옴 
+   from A import B as C - A 패키지 안의 B 모듈을  C 이름으로 가져옴 
+   from A.B import C as D - A패키지 안의 B 모듈안의 C를 D 이름으로 가져옴 
+-상위 패키지 import 한다고 하위 패키지가 import 되지 않습니다. 
+-패키지 import 한다고 모듈이 import 되지 않습니다. 
+
+4절. 패키지(라이브러리) 를 설치 및 삭제
+  아나콘다 프롬프트에서 
+- 패키지 설치 : pip install 패키지명 [==버젼]/ conda install 패키지명[==버젼] / uv pip install 패키지명 [==버젼]
+- 패키지 확인 : pip show 패키지명  / conda list 패키지명 
+- 패키지 삭제 : pip uninstall 패키지명 / conda remove 패키지명 
