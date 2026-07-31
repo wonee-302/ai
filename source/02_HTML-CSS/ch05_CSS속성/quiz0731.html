@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #container{width:800px; margin:0 auto;}
+        div{border:1px solid gray;
+            text-align:center;
+            margin:5px;
+            padding:5px;
+            box-sizing:border-box;
+        }
+        #header{
+            height: 100px;
+  
+            background-color: yellow;
+         
+            line-height: 100px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #nav {
+            font-weight: bold;
+            font-size: 20px;
+            height:130px;
+            
+        }
+            #nav ul {
+                overflow: hidden;
+                list-style: none;
+                width: 700px;
+                margin: 0 auto;
+                background-color: pink;
+                border-radius: 25px;
+            }
+        #nav ul li{float:left; list-style:none; width:20%;}
+        #nav ul li a{ display:block;background-color:pink; border-right:2px solid white; text-decoration:none;}
+        #content{overflow:hidden; }
+        #mainContent {
+            float: left;
+            width: 74%;
+            height: 300px;
+  
+
+  
+            font-size: 20px;
+        }
+        #banner {
+            float: right;
+            width: 23%;
+            height: 300px;   
+     
+            font-size: 20px;
+        }
+        #footer {
+            height: 100px;
+    
+            background-color: yellow;
+
+            line-height: 100px;
+            font-weight: bold;
+            font-size: 20px;
+      
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">HEADER</div>
+        <div id="nav">
+            <p>NAVIGATION</p>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+
+            </ul> 
+        </div>
+        <div id="content">
+            <div id="mainContent">CONTENT</div>
+            <div id="banner">BANNER</div>
+
+        </div>
+        <div id="footer"> FOOTER</div>
+
+
+
+    </div>
+
+</body>
+</html>
