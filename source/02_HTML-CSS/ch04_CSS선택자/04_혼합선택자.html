@@ -1,75 +1,69 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <style>
-      
-     div {border:1px solid gray;}
-     div#header, div#footer { /* div태그중 id가 header이고 id가 footer */
-            width: 600px;
-            margin: 0 auto;
-            background-color: yellow;
-            text-align: center;
-            /*text-decoration:underline;*/
-        }
-     div#wrap {/*div 태그중 id가 wrap*/
-            width: 600px;
-            margin: 0 auto;
-            background-color: aqua;
-            overflow: hidden; /*부모단에*/
-            text-align:center;/* 가운데 정렬(글씨, 이미지) */
-        }
-
-        #wrap #content{
-                float: left;/*블록형태그를 수평으로  350*/
-                width:348px;/*content가로 = width(348px) +border(1px*2) =350 */
-                height:300px;
-            }
-        div#wrap #content li.odd { /*class 선택자(. )    div보다 작은 단위를 혼합해서 쓸때 이렇게 쓴다. 혼합 선택자는 반드시 붙여쓴다*/
-
-                font-size:1.5em;/*원래크기에 1.5배*/
-        }
-
-        #wrap #content li.menu2{font-weight:bold;} /*혼합선택자 li.menu2 반드시 붙여쓴다 */
-
-        #wrap #side_banner {
-                float: left; /*블록형태그를 수평으로 250*/
-                width: 248px; /*content가로 = width(248px) +border(1px*2) =250 */
-                height: 300px;
-            }
-        #wrap #side_banner img {width:240px;}
-        #footer {
-            clear:both;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <title></title>
+  <style>
+    div{border:1px solid gray;}
+    div#header, div#footer{ /*div태그중 id가 header이고 id가 footer*/
+      width:600px;
+      margin:0 auto;
+      background-color:yellow;
+      text-align: center;
+/*      text-decoration:underline; 밑줄*/
+    }
+    div#wrap { /*div태그 중 id가 wrap*/
+      width: 600px;
+      margin: 0 auto;
+      background-color:aqua;
+      overflow:hidden; /* 부모단에 */
+      text-align: center; /* 가운데 정렬(글씨, 이미지) */
+    }
+    #wrap #content{
+      float:left; /* 블록형태그를 수평으로 350*/
+      width:348px; /* content가로 = width(348px) + border(1px*2) = 350*/
+      height:300px;
+    }
+    div#wrap div#content li.odd { /* li태그 중 class명이 odd*/
+      font-size:1.5em; /*원래 크기의 1.5배*/
+    }
+    #wrap #content li.menu2{font-weight:bold;}
+    #wrap #side_banner{
+      float:left;/* 블록형태그를 수평으로 250*/
+      width:248px; /* 가로 = width(248px) + border(1px*2) = 250 */
+      height:300px;
+    }
+    #wrap #side_banner img{width:150px;}
+    #footer{
+      clear:both;
+    }
+  </style>
 </head>
 <body>
-    <div id="header">
-        <h1> HEADER</h1>
+  <div id="header">
+    <h1>HEADER</h1>
+  </div>
+  <div id="wrap">
+    <div id="content">
+      <h2>CONTENT</h2>
+      <ul>
+        <li class="menu1 odd">menu1</li>
+        <li class="menu2">menu2</li>
+        <li class="menu3 odd">menu3</li>
+        <li class="menu2">menu4</li>
+        <li class="menu1 odd">menu5</li>
+      </ul>
     </div>
-    <div id="wrap">
-        <div id="content">
-            <h2>CONTENT</h2>
-            <ul>
-                <li class="menu1 odd">menu1</li>
-                <li class="menu2">menu2</li>
-                <li class="menu1 odd">menu3</li>
-                <li class="menu2 ">menu4</li>
-                <li class="menu1 odd">menu5</li>
-            </ul>
-        </div>
-        <div id="side_banner">
-            <h2>BANNER</h2>
-            <a href="http://www.daum.net">
-                <img src="data:image/jpeg;base64,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itTaFvthke59O6so8ktqaZueH8zeYK7S+41JMancJrQ7Y6U04FwtNQKkDDuhcCxx7sqFa21rW6qkZG+MU9DE7ejgDsku+s49qjD3AO4kBx5A8D9691qs1zu83Q2u3z1Lz1tbho7y7kAtRWlZ25MzLy09NNV1EVJRs36mZwZE3tcf04rpjT9qZY9O0ltjORTQBhd9Y44n+6jOz3QDNOj4dcXsnubhgFvFsI7G9p71OZBlhb2jCjktylusahyrWevVXt5fxlWRsK+drt7CP3lRW56M1LFc6tjbLWSt6Z5bJHHvNcC4kEEeKnuxywXW11VzqrnRS0jZGsjY2YYc7GSTjs4qlrRw05ETtZVf6jUeyd7iuUaf1eL+ge5dX1bHSUs0bPScxwGe0hc2t0bqeFoidYa4uZ8QlkeQSOGQexZwzEel1i7CfULx7dv4VNdffQbUP+21H5blGtj1luVotte66UctI6omBZHKAHYAxkhS3VlHNc9L3egpAHT1VFNDECcAucwgfeVO07s7XxzKru2JfRaf7W/3BVUNJamI46fuIPZ0Wf1VxbJ7TX2fTTorlTup5pZ3SCJ/pAd/Yq5bRMdM1idpsiIoKCIiAsELKIMYWURBjCY4LKIMYWURBjCAAHKyiDGO8phZRB+HxMkY5kjQ5jhgtcMgrEMEUDGxwxsjY3k1jQAPIL6IgHisYWUQeR9toJHb8lFTOd2uiaT7l6I4Y4mbkUbWM+q1oAX7RBgDCYWUQYwm6sogwQmFlEGA0BCFlEGMJuhZRAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf/Z"
-                     alt="다음로고" />
-            </a>
-        </div>        
-    </div> 
-    <div id="footer">
-        <h1> FOOTER</h1>
+    <div id="side_banner">
+      <h2>BANNER</h2>
+      <a href="http://www.daum.net">
+        <img src="https://www.brandb.net/_next/image?url=https%3A%2F%2Fapi.brandb.net%2Fapi%2Fv2%2Fcommon%2Fimage%3FfileId%3D22973&w=1920&q=75"  
+             alt="다음로고"/>
+      </a>
     </div>
+  </div>
+  <div id="footer">
+    <h1>FOOTER</h1>
+  </div>
 </body>
 </html>

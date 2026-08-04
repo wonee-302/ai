@@ -6,15 +6,15 @@
 		"address": "서울"
 	},
 	{
-		"name": "이길동",
-		"age": 20,
-		"email": "r@k.com",
+		"name": "박길동",
+		"age": 30,
+		"email": "p@k.com",
 		"address": "경기"
 	},
 	{
-		"name": "홍길동",
-		"age": 10,
-		"email": "l@k.com",
+		"name": "마길동",
+		"age": 30,
+		"email": "m@k.com",
 		"address": "인천"
 	}
 ]

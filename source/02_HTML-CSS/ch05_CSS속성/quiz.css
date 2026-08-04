@@ -30,35 +30,32 @@ div {
   width:700px; margin: 0 auto;
   overflow: hidden;
 }
-  #nav ul>li {
-    float: left;
-    line-height: 50px;
-    background-color:pink;
-    margin:5px 0.3% 15px 0;
-    width:19.4%;
-  }
-  #nav ul li:first-child{
-    border-radius: 20px 0 0 20px;
-  }
-  #nav ul li:last-child{
-    border-radius: 0 20px 20px 0;
-  }
+#nav ul>li {
+  float: left;
+  line-height: 50px;
+  background-color:pink;
+  margin:5px 0.3% 15px 0;
+  width:19.4%;
+}
+#nav ul li:first-child{
+  border-radius: 20px 0 0 20px;
+}
+#nav ul li:last-child{
+  border-radius: 0 20px 20px 0;
+}
 /* * * * * * * #section * * * * * * */
 #section {
-  overflow: hidden;
-  
+  overflow: hidden;  
 }
 #section #content{
   float: left;
   width: 580px;
   height: 200px;
-  box-sizing:border-box;
 }
 #section #banner{
   float: left;
   width: 176px;
   height: 200px;  
-  box-sizing:border-box;
 }
 /* * * * * * * #footer * * * * * * */
 #footer {
@@ -84,14 +81,8 @@ div {
   opacity: 0.3;
 }
 /* * * * * * * 서브메뉴를 위한 부분 * * * * * * */
-.submenu {
-  display: none;
-}
-
-#nav ul > li:hover .submenu {
-  display: block;
-}
-
+.submenu {display: none;}
+#nav ul > li:hover .submenu { display: block;}
 #nav {
   height: 130px; /* 높이를 고정하지 않으면 submenu 나타날때마다 nav 높이가 바뀜*/
   position: relative;
