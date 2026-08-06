@@ -1,0 +1,19 @@
+1. 자바스크립트기본 자료형
+ 문자열, 숫자, 불린, 객체·배열, 함수, undefined
+typeof로 자료형을 확인 
+
+2. 변수는 var, let, const로 선언
+재할당 여부와 범위 고려해 let과 const 사용
+
+3. alert()는 알림 출력
+confirm()은 확인·취소 true/false 반환
+prompt()는 사용자 입력 문자열 반환
+
+4.Number(), parseInt(), parseFloat(), String(), Boolean(), isNaN()자료형변환
+
+5. ==: 값만 비교, ===: 값과 자료형까지 비교
+
+6. if, if-else, else if, switch
+   Date, document 내장객체 시간이나 화면을 제어
+
+7.단락평가는 &&, ||에서 앞의 조건만으로 결과가 결정 뒤 코드를 실행하지 않음

@@ -1,0 +1,14 @@
+1.form, action, method
+
+2.input 유형: text, password, radio, checkbox, file, date, submit 
+
+3.div와 시맨틱 태그- 공간을 나눔
+
+4. CSS 선택자 디자인을 적용하는 문법
+
+5.전체 *, 아이디 #, 클래스 ., 혼합 선택자
+
+6.후손·자손 선택자 형제 선택자 +, ~
+
+
+
